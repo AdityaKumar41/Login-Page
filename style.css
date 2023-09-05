@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+img {
+    height: 75vh;
+    width: 75vw;
+    position: relative;
+    left: 13vw;
+    top: 80px;
+}
+
+.inside-bgw p {
+    text-align: center;
+    opacity: 1;
+    color: gray;
+}
+
+.bg-continer {
+    margin-top: 37px;
+    position: absolute;
+    height: 65vh;
+    width: 45vw;
+    background-color: rgb(57, 47, 58);
+    top: 7rem;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    img {
+        left: 33px;
+        height: 100vh;
+        width: 90vw;
+    }
+
+    .bg-continer {
+        left: 63px;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    img {
+        left: 17px;
+        height: 100vh;
+        width: 90vw;
+    }
+
+    .bg-continer {
+        left: 37px;
+        width: 80%;
+        height: 70%;
+    }
+
+}
+
+form input {
+    position: relative;
+    margin-top: 25px;
+    border: 3px solid rgb(123, 51, 194);
+    width: 16vw;
+    height: 4vh;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    /* align-self: center; */
+    position: absolute;
+    width: 110px;
+    height: 6vh;
+    left: 42%;
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+    border: 3px solid rgb(44, 137, 44);
+    align-items: center;
+}
+
+button:hover {
+    border: solid 3px white;
+    cursor: pointer;
+    transition: background 0.5s ease-out;
+    background-color: #2ecc71;
+}
+
+@media screen and (max-width:800px) {
+    form input {
+        height: 30px;
+        width: 200px;
+    }
+
+    button {
+        height: 40px;
+        width: 80px;
+    }
+}
+
+p a {
+    color: gray;
+}
+
+.fa1 {
+    padding: 18px;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 18px 0px 5px 0px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: white;
+    background: linear-gradient(#252525, #252525 50%, #2ecc71 50%, #2ecc71);
+    background-size: 100% 200%;
+    transition: background 1s;
+}
+
+.fa-twitter {
+    color: white;
+    background: linear-gradient(#252525, #252525 50%, #2ecc71 50%, #2ecc71);
+    background-size: 100% 200%;
+    transition: background 1s;
+}
+
+.fa-google {
+    color: white;
+    background: linear-gradient(#252525, #252525 50%, #2ecc71 50%, #2ecc71);
+    background-size: 100% 200%;
+    transition: background 1s;
+}
+
+.social-media {
+    position: absolute;
+    top: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    button {
+        left: 17vw;
+    }
+
+    form input {
+        width: 250px;
+    }
+
+    .fa-fw {
+        margin-top: 1px;
+        margin-left: 34px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    form input {
+        width: 250px;
+    }
+
+    .fa-fw {
+        margin-left: 185px;
+    }
+
+    button {
+        left: 34vw;
+    }
+}
+
+.fa-facebook:hover {
+    color: rgb(61, 59, 59);
+    background-position: 100% 100%;
+
+}
+
+.fa-twitter:hover {
+    color: rgb(61, 59, 59);
+    background-position: 100% 100%;
+}
+
+.fa-google:hover {
+    color: rgb(61, 59, 59);
+    background-position: 100% 100%;
+}
+
+.fa1 {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.fa-fw {
+    position: absolute;
+    top: 205px;
+    left: 29vw;
+    width: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .inside-form {
+        width: 180px;
+    }
+
+    .fa-fw {
+        left: 16vw;
+    }
+
+    .fa1 {
+        padding: 15px;
+        margin-right: 0px;
+    }
+
+    button {
+        left: 31vw;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .fa-fw {
+        margin-top: 20px;
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    button {
+        left: 27vw;
+    }
+}

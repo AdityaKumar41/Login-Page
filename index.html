@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive login-page</title>
+</head>
+
+<body>
+    <main>
+        <div class="inside-bgw">
+            <img src="insidebg.jpg" alt="" />
+            <div class="bg-continer">
+                <h3>LOGIN</h3>
+                <p>please enter your username and password!</p>
+                <br />
+                <form action="">
+                    <input class="inside-form" type="text" placeholder="Username" /><br />
+                    <input class="inside-form" type="password" name="pass" id="pass_log_id" placeholder="Password" />
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span>
+                    <p><a href="#">Forget password?</a></p>
+                    <br />
+                    <button type="submit">Login</button>
+                </form>
+                <div class="social-media">
+                    <a href="#" class="fa1 fa fa-facebook"></a>
+                    <a href="#" class="fa1 fa fa-twitter"></a>
+                    <a href="#" class="fa1 fa fa-google"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).on('click', '.toggle-password', function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+
+            var input = $("#pass_log_id");
+            input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password')
+        });
+    </script>
+</body>
+
+</html>
