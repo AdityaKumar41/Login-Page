@@ -1,4 +1,2 @@
-# Login-Page-Dekstop-View
+# Login-Page
 ![Responsive login page](https://ownyourblog.blr1.cdn.digitaloceanspaces.com/image.png)
-# Login-Page-Mobile-View
-![Responsive login page](https://ownyourblog.blr1.cdn.digitaloceanspaces.com/mobileresponsive.png)
